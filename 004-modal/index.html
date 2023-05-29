@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Day 4 - Modal window</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body class="flex justify-center items-center h-screen">
+        <button onclick="openModal('xyz')"  class="shadow shadow-lg px-8 py-4 bg-sky-600 rounded-2xl text-center">Open modal</button>
+
+        <div id="modal-xyz" class="modal" onclick="closeModal(event)">
+            <div class="bg-white px-8 pt-4 pb-8 opacity-100 rounded-2xl">
+                <div class="flex justify-between pb-3 font-bold text-lg">
+                    <div>Awesome modal</div>
+                    <button
+                        onclick="closeModalByButton(event)"
+                        class="px-2 text-center rounded-lg text-red-500 font-black hover:bg-red-200"
+                    >
+                        x
+                    </button>
+                </div>
+                <div>
+                    This is my awesome modal.
+                    And here is some other text to fill some space.
+                </div>
+                <div class="pt-4 flex justify-between">
+                    <button
+                        onclick="closeModalByButton(event)"
+                        class="rounded-full px-4 py-1 border border-solid border-slate-300 hover:bg-slate-300"
+                    >
+                        Close
+                    </button>
+                    <button
+                        onclick="confirmModal(event)"
+                        class="rounded-full px-4 py-1 bg-emerald-500 hover:bg-emerald-600"
+                    >
+                        Confirm
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
