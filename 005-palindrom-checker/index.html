@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Day 5 - Palindrome checker</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body class="flex justify-center items-center h-screen bg-slate-300">
+        <div class="p-8 rounded-2xl bg-white text-center flex flex-col gap-2">
+            <h1 class="text-2xl">Palindrome checker</h1>
+            <input
+                type="text"
+                id="palindrome-input"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Let me check"
+            >
+            <div>
+                <i id="icon-yes" class="fa-solid fa-check fa-xl text-green-600" style="display: none"></i>
+                <i id="icon-no" class="fa-solid fa-xmark fa-xl text-red-600"></i>
+            </div>
+        </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
