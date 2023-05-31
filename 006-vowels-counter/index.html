@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Day 6 - Vowels counter</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="flex justify-center items-center h-screen bg-slate-300">
+        <div class="p-8 rounded-2xl bg-white text-center flex flex-col gap-2">
+            <h1 class="text-2xl">Vowels counter</h1>
+            <input
+                type="text"
+                id="text-input"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Let me count"
+            >
+            <div>
+                Vowels: <span id="vowels-count">0</span>
+            </div>
+        </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
